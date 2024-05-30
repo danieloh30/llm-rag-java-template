@@ -2,11 +2,12 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: llm-rag-java-template
-  title: Securing a LLM RAG Service Software Supply Chain
-  description: Create a LLM RAG microservice built on a trusted software supply chain
+  title: Securing a LLM RAG Java Service Software Supply Chain
+  description: Create a LLM RAG Java microservice built on a trusted software supply chain
   tags:
     - recommended
     - java
+    - quarkus
 spec:
   owner: rhdh
   type: service
