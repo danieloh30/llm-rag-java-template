@@ -48,12 +48,11 @@ export class DemoTitle extends LitElement {
     render() {
         return html`
             <div class="title">
-                <h1>AI Buddy</h1>
+                <h1>Ask Me Anything</h1>
             </div>
             <div class="explanation">
-                This demo shows how to build a chat bot powered by GPT 3.5 and retrieval augmented generation.
-                The description of the different accounts is ingested into a Redis database and relevant information
-                is sent to the LLM before answering the user.
+                This demo shows how to build a chatbot using a Java applicaton that uses LLM (InstructLab/Granite) model locally base on Podman DeskTop AI Lab. It leverages the retrieval augmented generation (RAG) to augment the user queries.
+                The description of the different accounts is ingested into a Redis database and relevant information is sent to the LLM before answering the user.
             </div>
             
             <div class="explanation">
