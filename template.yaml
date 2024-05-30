@@ -7,7 +7,7 @@ metadata:
   tags:
     - recommended
     - java
-    - quarkus
+    - instructlab
 spec:
   owner: rhdh
   type: service
