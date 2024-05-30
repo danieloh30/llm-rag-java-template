@@ -24,7 +24,7 @@ You can run your application in dev mode that enables live coding using:
 open http://localhost:8080
 ```
 
-![AI Buddy](./readme-images/main-screen.png)
+![Java AI App](./readme-images/main-screen.png)
 
 ## Interacting with the application
 
