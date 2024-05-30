@@ -21,7 +21,7 @@ spec:
           title: Name
           type: string
           description: Unique name of the component
-          default: my-rag-app
+          default: my-java-ai-app
           ui:field: EntityNamePicker
           maxLength: 14
         group_id:
@@ -32,7 +32,7 @@ spec:
         artifact_id:
           title: Artifact Id
           type: string
-          default: ai-app
+          default: java-ai-app
           description: Maven Artifact Id
         java_package_name:
           title: Java Package Name
@@ -43,7 +43,7 @@ spec:
           title: Description
           type: string
           description: Help others understand what this website is for.
-          default: Enterprise AI-infused application example  
+          default: Enterprise Java AI-infused application example  
     - title: Application repository Information
       required:
         - repo
