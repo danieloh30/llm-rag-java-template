@@ -8,7 +8,7 @@ Open template.yaml and replace `*.opentlc.com` with your cluster's route domain 
 
 ![Template.yaml](/images/template-yaml-updates.png)
 
-To import, click on Register Existing Component and paste in the URL to the **template.yaml** file
+To import, click on Register Existing Component and paste in the URL to the `template.yaml` file
 
 ![Register](/images/register-component.png)
 
