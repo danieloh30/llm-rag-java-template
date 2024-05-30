@@ -1,6 +1,6 @@
 # LLM RAG Java Template
 
-This repository implements a software template to develop Java AI application using Podman Desktop AI Lab and deploy the app to OpenShift AI using Red Hat Developer Hub, ACS, and RHTAP.
+This repository implements a software template to develop Java AI application using Podman Desktop AI Lab and deploy the app to OpenShift AI using Red Hat Developer Hub, Red Hat Advanced Cluster Security for Kubernetes, and Red Hat Trusted Application Pipeline.
 
 # BEFORE Import
 
