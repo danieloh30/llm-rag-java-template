@@ -31,15 +31,23 @@ export class DemoTitle extends LitElement {
       .explanation {
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
-        text-align: justify;
-        font-size: 20px;
+        width: 85%;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .explanation2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        text-align: left;
+        font-size: 18px;
       }
       
       .explanation img {
-        max-width: 60%;
-        display: block;
-        float:left;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
         margin-right: 2em;
         margin-top: 1em;
       }
@@ -50,21 +58,27 @@ export class DemoTitle extends LitElement {
             <div class="title">
                 <h1>Ask Me Anything</h1>
             </div>
-            <div class="explanation">
-                This demo showcases how to build an Java AI application (chatbot) that uses LLM (InstructLab/Granite) model locally based on Podman DeskTop AI Lab. The AI application is deployed to OpenShift AI using Red Hat Developer Hub, ACS, and RHTAP.
             
+            <div class="explanation">
+                  This demo walks you through building and deploying a Java chatbot powered by a Large Language Model (LLM) entirely on-premise.
+            </div>
+
+            <div class="explanation2">
+                  <ul>
+                    <li> <b>Local Development</b>: We'll leverage Podman Desktop AI Lab to set up a development environment for your Java AI application using the InstructLab/Granite LLM model locally.
+                    <li> <b>OpenShift AI</b>: Once developed, we'll deploy your chatbot to <a href="https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-ai" target="_blank">OpenShift AI</a> using <a href="https://access.redhat.com/products/red-hat-developer-hub/" target="_blank">Red Hat Developer Hub</a>. This streamlined platform simplifies the deployment process.
+                    <li> <b>Enhanced Security</b>: <a href="https://www.redhat.com/en/technologies/cloud-computing/openshift/advanced-cluster-security-kubernetes" target="_blank">Red Hat Advanced Cluster Security for Kubernetes</a> and  <a href="https://www.redhat.com/en/products/trusted-application-pipeline" target="_blank">Red Hat Trusted Application Pipeline</a> safeguard your deployment with advanced security measures.
+                </ul>
+            </div>
+
+            <div align="center" font-size="medium"> 
+              <p style="font-size:30px">
+                When you're ready to get started, click <img src="images/chatbot-icon.png" width="40" height="35"/> button on the bottom right.
+              </p>
+            </div>
+
             <div class="explanation">
                 <img src="images/demo-architecture.png"/>
-            </div>
-            
-            <div class="explanation">
-                <ol>
-                    <li>The user send a question to the application.</li>
-                    <li>The application looks for relevant data in the Redis store.</li>
-                    <li>The relevant data is retrieved and added to the user's question.</li>
-                    <li>The extended question is sent to the LLM model.</li>
-                    <li>The response is received and sent back to the user.</li>
-                </ol>
             </div>
         `
     }
