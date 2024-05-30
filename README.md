@@ -1,14 +1,10 @@
-# LLM RAG Template
+# LLM RAG Java Template
 
-This repository contains a **fake** Backstage Template used to create the Kubernetes resources needed
+This repository implements a software template to develop Java AI application using Podman Desktop AI Lab and deploy the app to OpenShift AI using Red Hat Developer Hub, ACS, and RHTAP.
 
 # BEFORE Import
 
-Open template.yaml and replace `*.opentlc.com`. There are 5 updates to make
-
-These are unique per spawned RHTAP/Dance Cluster from demo.redhat.com 
-
-![Quay URL](/images/new-quay-url.png)
+Open template.yaml and replace `*.opentlc.com` with your cluster's route domain when you use the OpenShift cluster in the RHDP.
 
 ![Template.yaml](/images/template-yaml-updates.png)
 

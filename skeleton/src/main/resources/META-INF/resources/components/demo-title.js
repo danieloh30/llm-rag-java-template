@@ -51,12 +51,10 @@ export class DemoTitle extends LitElement {
                 <h1>Ask Me Anything</h1>
             </div>
             <div class="explanation">
-                This demo shows how to build a chatbot using a Java applicaton that uses LLM (InstructLab/Granite) model locally base on Podman DeskTop AI Lab. It leverages the retrieval augmented generation (RAG) to augment the user queries.
-                The description of the different accounts is ingested into a Redis database and relevant information is sent to the LLM before answering the user.
-            </div>
+                This demo showcases how to build an Java AI application (chatbot) that uses LLM (InstructLab/Granite) model locally based on Podman DeskTop AI Lab. The AI application is deployed to OpenShift AI using Red Hat Developer Hub, ACS, and RHTAP.
             
             <div class="explanation">
-                <img src="images/chatbot-architecture.png"/>
+                <img src="images/demo-architecture.png"/>
             </div>
             
             <div class="explanation">
