@@ -6,23 +6,15 @@ This leverages a LLM + RAG (Retrieval Augmented Generation), where additional co
 
 ## Setup
 
-Go to https://openai.com/blog/openai-api
+Install Podman DeskTop and AI Lab Extension: https://github.com/containers/podman-desktop-extension-ai-lab
 
-Sign up
+Download the InstructLab Granite 7B model locally: **instructlab/granite-7b-lab-GGUF**
 
-Create an API key https://platform.openai.com/api-keys
+Start the model service
 
-Provide a credit card for Billing https://platform.openai.com/account/billing/overview
-
-Monitor usage https://platform.openai.com/usage
-
-Create a .env file in the root of the project to hold the API key
-
-```
-QUARKUS_LANGCHAIN4J_OPENAI_API_KEY=<insert openai.com API key here>
-```
 
 ## Running the application in dev interactive mode
+
 You can run your application in dev mode that enables live coding using:
 ```shell script
 ./mvnw compile quarkus:dev
