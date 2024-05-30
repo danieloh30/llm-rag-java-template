@@ -101,7 +101,7 @@ spec:
                   title: Image Host
                   type: string
                   description: Host for storing image
-                  default: quay-kvw4p.apps.cluster-8825s.sandbox1760.opentlc.com
+                  default: quay-8825s.apps.cluster-8825s.sandbox1760.opentlc.com
                 image_organization:
                   title: Organization
                   type: string
