@@ -12,6 +12,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.event.Observes;
 import jakarta.inject.Inject;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
@@ -34,11 +35,22 @@ public class DocumentIngestor {
     public void ingest(@Observes StartupEvent event) {
         System.out.printf("Ingesting documents...%n");
 
-        // List<Document> documents = FileSystemDocumentLoader.loadDocuments(new
-        // File("src/main/resources/insurance").toPath(),
+//        List<Document> documents = FileSystemDocumentLoader.loadDocuments(
+//                new File("src/main/resources/documents/bank").toPath(),
+//                new TextDocumentParser());
+//        List<Document> documents = FileSystemDocumentLoader.loadDocuments(
+//                new File("src/main/resources/documents/halffoods").toPath(),
+//                new TextDocumentParser());
+//        List<Document> documents = FileSystemDocumentLoader.loadDocuments(
+//                new File("src/main/resources/documents/insurance").toPath(),
+//                new TextDocumentParser());
+//        List<Document> documents = FileSystemDocumentLoader.loadDocuments(
+//                new File("src/main/resources/documents/museum").toPath(),
+//                new TextDocumentParser());
         List<Document> documents = FileSystemDocumentLoader.loadDocuments(
                 new File("src/main/resources/museum").toPath(),
                 new TextDocumentParser());
+
         var ingestor = EmbeddingStoreIngestor.builder()
                 .embeddingStore(store)
                 .embeddingModel(embeddingModel)
